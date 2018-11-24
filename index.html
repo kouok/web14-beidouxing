@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0" />
+	<!-- 禁止将数字转为号码 -->
+	<meta name="format-detection" content="telephone=no" />
+	<!-- 控制顶栏状态栏显示样式，可以为透明 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<!-- 添加一个网站图标，这样当你将网站添加到桌面图标时，会显示出来 -->
+	<link rel="apple-touch-icon-precomposed" href="mobile_logo.png?v1" />
+	<title>北斗星通旗下企业官网</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/font_930795_m1wjjazhpf/iconfont.css">
+	<script src="js/TouchSlide.1.1.js"></script>
+	<script>
+		(() => {
+			const html = document.documentElement;
+			const whtml = parseInt(html.getBoundingClientRect().width);
+			html.style.fontSize = whtml / 7.5 + 'px'
+		})()
+	</script>
+</head>
+<body>
+	<!-- 遮罩层 -->
+	<section class="mark"></section>
+	<!-- header -->
+	<header class="bgWhite">
+		<div class="headerBox flex">
+			<div class="logo">
+				<img src="imgs/logo.png" alt="">
+			</div>
+			<div class="head-nav">
+				<i class="iconfont icon-fangdajing"></i>
+				<i class="iconfont icon-caidan" id="nav"></i>
+				<div class="navBox bgWhite">
+					<ul>
+						<li class="nav-li flex">
+							<i class="iconfont icon-home"></i>
+							<span>首页</span>
+						</li>
+						<li class="nav-li flex active">
+							<i class="iconfont icon-fangzidichan"></i>
+							<span>关于华信</span>
+						</li>
+						<li class="nav-li flex">
+							<i class="iconfont icon-chanpin"></i>
+							<span>产品中心</span>
+						</li>
+						<li class="nav-li flex">
+							<i class="iconfont icon-shezhi"></i>
+							<span>解决方案</span>
+						</li>
+						<li class="nav-li flex">
+							<i class="iconfont icon-wenjian"></i>
+							<span>公司新闻</span>
+						</li>
+						<li class="nav-li flex">
+							<i class="iconfont icon-ziyuanldpi"></i>
+							<span>人才招聘</span>
+						</li>
+						<li class="nav-li flex">
+							<i class="iconfont icon-xiaoxi"></i>
+							<span>联系我们</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- 轮播图 -->
+	<section id="slideBox" class="slide posir">
+		<div class="hd">
+			<ul class="flex"></ul>
+		</div>
+		<div class="bd">
+			<ul class="flex">
+				<li><a href="#"><img src="imgs/banner1.png" alt=""></a></li>
+				<li><a href="#"><img src="imgs/banner2.png" alt=""></a></li>
+				<li><a href="#"><img src="imgs/banner3.png" alt=""></a></li>
+			</ul>
+		</div>
+	</section>
+	<!-- 关于华信,产品中心... -->
+	<section class="flex cp-box">
+		<div class="cp-item flex bgWhite">
+			<div class="cp-img"></div>
+			<span>关于华信</span>
+		</div>
+		<div class="cp-item flex bgWhite">
+			<div class="cp-img"></div>
+			<span>产品中心</span>
+		</div>
+		<div class="cp-item flex bgWhite">
+			<div class="cp-img"></div>
+			<span>解决方案</span>
+		</div>
+		<div class="cp-item flex bgWhite">
+			<div class="cp-img"></div>
+			<span>联系我们</span>
+		</div>
+	</section>
+	<!-- 热点新闻 -->
+	<section class="hot-news bgWhite">
+		<div class="flex">
+			<span>热点新闻</span>
+			<em></em>
+			<i class="iconfont icon-laba"></i>
+			<p>UFirebird战略合作发布，打响北斗低功耗物联网第一弹</p>
+		</div>
+	</section>
+	<!-- 产品详情 -->
+	<section class="cp-minute bgWhite">
+		<div id="minuteBox">
+			<div class="hd">
+				<ul class="flex">
+					<li><a href="javaScript:;">高精度定位天线</a></li>
+					<li><a href="javaScript:;">数传电台</a></li>
+					<li><a href="javaScript:;">卫星通信</a></li>
+				</ul>
+			</div>
+			<div class="bd">
+				<div class="bd-slide">
+					<div class="bdSlideBox posir">
+						<div class="moveBox">
+							<div class="bd-slide-item">
+								<div class="img"><img src="./imgs/10.png" alt=""></div>
+								<div class="slide-item-text">
+									<p>3D基准站天线</p>
+									<a href="#">查看详情 >></a>
+								</div>
+							</div>
+							<div class="bd-slide-item">
+								<div class="img"><img src="./imgs/11.png" alt=""></div>
+								<div class="slide-item-text">
+									<p>2D基准站天线</p>
+									<a href="#">查看详情 >></a>
+								</div>
+							</div>
+							<div class="bd-slide-item">
+								<div class="img"><img src="./imgs/12.png" alt=""></div>
+								<div class="slide-item-text">
+									<p>无人机天线</p>
+									<a href="#">查看详情 >></a>
+								</div>
+							</div>
+							<div class="bd-slide-item">
+								<div class="img"><img src="./imgs/10.png" alt=""></div>
+								<div class="slide-item-text">
+									<p>无人机天线</p>
+									<a href="#">查看详情 >></a>
+								</div>
+							</div>
+							<div class="bd-slide-item">
+								<div class="img"><img src="./imgs/11.png" alt=""></div>
+								<div class="slide-item-text">
+									<p>2D基准站天线</p>
+									<a href="#">查看详情 >></a>
+								</div>
+							</div>
+						</div>
+						<a href="javaScript:;" class="btn prev" id="prev1">
+							<i class="iconfont icon-zuo"></i>
+						</a>
+						<a href="javaScript:;" class="btn next" id="next1">
+							<i class="iconfont icon-you"></i>
+						</a>
+					</div>
+				</div>
+				<div class="bd-slide">
+					<div class="bdSlideBox posir">
+						<div class="moveBox">
+							<div class="bd-slide-item">
+								<div class="img"><img src="./imgs/20.png" alt=""></div>
+								<div class="slide-item-text">
+									<p>3D基准站天线</p>
+									<a href="#">查看详情 >></a>
+								</div>
+							</div>
+							<div class="bd-slide-item">
+								<div class="img"><img src="./imgs/21.png" alt=""></div>
+								<div class="slide-item-text">
+									<p>2D基准站天线</p>
+									<a href="#">查看详情 >></a>
+								</div>
+							</div>
+							<div class="bd-slide-item">
+								<div class="img"><img src="./imgs/22.png" alt=""></div>
+								<div class="slide-item-text">
+									<p>无人机天线</p>
+									<a href="#">查看详情 >></a>
+								</div>
+							</div>
+							<div class="bd-slide-item">
+								<div class="img"><img src="./imgs/20.png" alt=""></div>
+								<div class="slide-item-text">
+									<p>无人机天线</p>
+									<a href="#">查看详情 >></a>
+								</div>
+							</div>
+							<div class="bd-slide-item">
+								<div class="img"><img src="./imgs/21.png" alt=""></div>
+								<div class="slide-item-text">
+									<p>2D基准站天线</p>
+									<a href="#">查看详情 >></a>
+								</div>
+							</div>
+						</div>
+						<a href="javaScript:;" class="btn prev" id="prev2">
+							<i class="iconfont icon-zuo"></i>
+						</a>
+						<a href="javaScript:;" class="btn next" id="next2">
+							<i class="iconfont icon-you"></i>
+						</a>
+					</div>
+				</div>
+				<div class="bd-slide">
+					<div class="bdSlideBox posir">
+						<div class="moveBox">
+							<div class="bd-slide-item">
+								<div class="img"><img src="./imgs/30.png" alt=""></div>
+								<div class="slide-item-text">
+									<p>3D基准站天线</p>
+									<a href="#">查看详情 >></a>
+								</div>
+							</div>
+							<div class="bd-slide-item">
+								<div class="img"><img src="./imgs/31.png" alt=""></div>
+								<div class="slide-item-text">
+									<p>2D基准站天线</p>
+									<a href="#">查看详情 >></a>
+								</div>
+							</div>
+							<div class="bd-slide-item">
+								<div class="img"><img src="./imgs/32.png" alt=""></div>
+								<div class="slide-item-text">
+									<p>无人机天线</p>
+									<a href="#">查看详情 >></a>
+								</div>
+							</div>
+							<div class="bd-slide-item">
+								<div class="img"><img src="./imgs/30.png" alt=""></div>
+								<div class="slide-item-text">
+									<p>无人机天线</p>
+									<a href="#">查看详情 >></a>
+								</div>
+							</div>
+							<div class="bd-slide-item">
+								<div class="img"><img src="./imgs/31.png" alt=""></div>
+								<div class="slide-item-text">
+									<p>2D基准站天线</p>
+									<a href="#">查看详情 >></a>
+								</div>
+							</div>
+						</div>
+						<a href="javaScript:;" class="btn prev" id="prev3">
+							<i class="iconfont icon-zuo"></i>
+						</a>
+						<a href="javaScript:;" class="btn next" id="next3">
+							<i class="iconfont icon-you"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 新闻中心 -->
+	<section class="news-ct bgWhite">
+		<div class="news-ct-box">
+			<div class="title flex">
+				<span><i>新闻中心</i><em>&nbsp;/NEWS CENTER</em></span>
+				<a href="#">查看更多 >></a>
+			</div>
+			<div class="title-text flex">
+				<div>
+					<div class="img"><img src="./imgs/circle.png" alt=""></div>
+					<span class="cutFont">RTK电台哪家强？eRadio™智能电台大比测</span>
+				</div>
+				<div class="time">2018-07-16</div>
+			</div>
+			<div class="title-text flex">
+				<div>
+					<div class="img"><img src="./imgs/circle.png" alt=""></div>
+					<span class="cutFont">共建北斗新时代丨华信亮相第九届中国卫星导航共建北斗新时代丨华信亮相第九届中国卫星导航</span>
+				</div>
+				<div class="time">2018-07-16</div>
+			</div>
+			<div class="title-text flex">
+				<div>
+					<div class="img"><img src="./imgs/circle.png" alt=""></div>
+					<span class="cutFont">创新•融合丨华信引领高精度天线进入全网通时代</span>
+				</div>
+				<div class="time">2018-07-16</div>
+			</div>
+		</div>
+	</section>
+	<!-- footer -->
+	<footer class="bgWhite tc">
+		<div class="footer-title flex">
+			<a href="#">人才招聘</a>
+			<span></span>
+			<a href="#">留言反馈</a>
+			<span></span>
+			<a href="#">友情链接</a>
+		</div>
+		<p>翻版必究 粤ICP备09221680号</p>
+		<p>Copyright © 2012 深圳市华信天线技术有限公司</p>
+	</footer>
+	<script>
+		(() => {
+			var C = classname => document.getElementsByClassName(classname)
+			var Id = idname => document.getElementById(idname)
+			// 打开遮罩层
+			Id('nav').onclick = () => {
+				C('mark')[0].style.display = 'block'
+				C('navBox')[0].style.display = 'block'
+			}
+			// 关闭遮罩层
+			for (let i = 0; i < C('nav-li').length; i++) {
+				C('nav-li')[i].onclick = () => {
+					C('mark')[0].style.display = 'none'
+					C('navBox')[0].style.display = 'none'
+				}
+			}
+			// 轮播图
+			TouchSlide({ 				
+				slideCell:"#slideBox",
+				titCell:".hd ul",
+				mainCell:".bd ul", 
+				effect:"leftLoop", 
+				autoPlay:true,//自动播放
+				autoPage:true, //自动分页
+				interTime: 3000,
+			});
+			// tab切换
+			TouchSlide({ slideCell:"#minuteBox" });
+
+			const width = C('bd-slide-item')[0].offsetWidth+12
+			const num = [0, 0, 0]
+			for (let i = 0; i < 3; i++) {
+				Id('next'+(i+1)+'').ontouchstart = function() {
+					this.style.background = '#183884';
+					if (num[i] < 2) {
+						num[i]++
+						C('moveBox')[i].style.marginLeft = -width*num[i] +'px'
+					}
+				}
+				Id('next'+(i+1)+'').ontouchend = function() {
+					this.style.background = '#B3B3B3';
+				}
+				Id('prev'+(i+1)+'').ontouchstart = function() {
+					this.style.background = '#183884';
+					if (num[i] > 0) {
+						num[i]--
+						C('moveBox')[i].style.marginLeft = -width*num[i] +'px'
+					}
+				}
+				Id('prev'+(i+1)+'').ontouchend = function() {
+					this.style.background = '#B3B3B3';
+				}
+			}
+		})()
+	</script>
+</body>
+</html>
