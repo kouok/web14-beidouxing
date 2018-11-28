@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<!--viewport一定要加 user-scalable 值可以是yes|no或1|0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0" />
+    <!-- 禁止将数字转为号码 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 控制顶栏状态栏显示样式，可以为透明 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 添加一个网站图标，这样当你将网站添加到桌面图标时，会显示出来 -->
+    <link rel="apple-touch-icon-precomposed" href="mobile_logo.png?v1" />
+    <link rel="stylesheet" href="download/font_hy1hceb2rcc/iconfont.css">
+    <link rel="stylesheet" href="css/1.css">
+    <title>北斗星</title>
+    <!-- <link rel="stylesheet" href="reset.css"/> -->
+    <!-- <link rel="stylesheet" href="css/animate.css"/> -->
+    <script src="js/插件/TouchSlide插件/TouchSlide.1.1.source.js"></script>
+</head>
+<body>
+	<header class="flex">
+		<div class="logo"><img src="img/1.png" alt="" class="cur"></div>
+		<div class="sesrch">
+			<img src="img/2.png" alt="" class="cur">
+			<img src="img/3.png" alt="" class="cur" id="but">
+		</div>
+	</header>
+	<nav style="display:none; " id="onav">
+		<div class="nav_wrap iconfont icon-shouye"><span>首页</span></div>
+		<div class="nav_wrap iconfont icon-fangwulouzuoxianxing"><span>关于华信</span></div>
+		<div class="nav_wrap iconfont icon-chanpin"><span>产品中心</span></div>
+		<div class="nav_wrap iconfont icon-banshou"><span>解决方案</span></div>
+		<div class="nav_wrap iconfont icon-wenjian"><span>公司新闻</span></div>
+		<div class="nav_wrap iconfont icon-zhaopinrencai"><span>人才招聘</span></div>
+		<div class="nav_wrap iconfont icon-xinxi"><span>联系我们</span></div>
+	</nav>
+	<!-- 轮播 -->
+	<div class="rb">
+		<div id="content">
+			<div id="slideBox" class="slideBox">
+				<div class="bd">	
+					<ul>
+						<li>
+							<a class="pic" href="#"><img src="img/4.png" /></a>
+						</li>
+						<li>
+							<a class="pic" href="#"><img src="img/4.png"/></a>
+						</li>
+						<li>
+							<a class="pic" href="#"><img src="img/4.png"/></a>
+						</li>
+						<li>
+							<a class="pic" href="#"><img src="img/4.png"/></a>
+						</li>
+					</ul>
+				</div>
+				<div class="hd">
+					<ul></ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#slideBox",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					mainCell:".bd ul", 
+					effect:"leftLoop", 
+					autoPage:true,//自动分页
+					autoPlay:true //自动播放
+				});	
+			</script>
+		</div>
+	</div>
+	<!-- 页面1 -->
+	<div class="list flex">
+		<div>
+			<div class="iconfont icon-fangwulouzuoxianxing"></div>
+			<div>关于华信</div>
+		</div>
+		<div>
+			<div class="iconfont icon-chanpin"></div>
+			<div>产品中心</div>
+		</div>
+		<div>
+			<div class="iconfont icon-banshou"></div>
+			<div>解决方案</div>
+		</div>
+		<div>
+			<div class="iconfont icon-xinxi"></div>
+			<div>联系我们</div>
+		</div>
+	</div>
+	<!-- 热点新闻 -->
+	<div class="list2 flex">
+		<div>热点新闻</div>
+		<div class="flex">
+			<div class="iconfont icon-laba"></div>
+			<div>UFirebird战略合作发布,打响北斗低功耗物联网第一弹</div>
+		</div>
+	</div>
+	<!-- 产品信息 -->
+	<div class="list3">
+		<div class="cp_top flex">
+			<div class="cpx">高精度定位天线</div>
+			<div>数传电台</div>
+			<div>卫星通信</div>
+		</div>
+		<div class="cp cp1 flex">
+			<span class="but1">&lt;</span>
+			<span class="but2">&gt;</span>
+			<div class=" cp_wrap flex">
+				<div>
+					<img src="img/5.png" alt="">
+					<div class="cpxx">3D基准站天线</div>
+					<div class="xq">查看详情&nbsp;&nbsp;&gt;&gt;</div>
+				</div>
+				<div>
+					<img src="img/6.png" alt="">
+					<div class="cpxx">2D基准站天线</div>
+					<div class="xq">查看详情&nbsp;&nbsp;&gt;&gt;</div>
+				</div>
+				<div>
+					<img src="img/7.png" alt="">
+					<div class="cpxx">无人机天线</div>
+					<div class="xq">查看详情&nbsp;&nbsp;&gt;&gt;</div>
+				</div>
+			</div>
+		</div>
+		<div class="cp cp2 flex" style="display:none">
+			<span class="but1">&lt;</span>
+			<span class="but2">&gt;</span>
+			<div class=" cp_wrap flex">
+				<div>
+					<img src="img/6.png" alt="">
+					<div class="cpxx">2D基准站天线</div>
+					<div class="xq">查看详情&nbsp;&nbsp;&gt;&gt;</div>
+				</div>
+				<div>
+					<img src="img/5.png" alt="">
+					<div class="cpxx">3D基准站天线</div>
+					<div class="xq">查看详情&nbsp;&nbsp;&gt;&gt;</div>
+				</div>
+				<div>
+					<img src="img/7.png" alt="">
+					<div class="cpxx">无人机天线</div>
+					<div class="xq">查看详情&nbsp;&nbsp;&gt;&gt;</div>
+				</div>
+			</div>
+		</div>
+		<div class="cp cp3 flex"  style="display:none">
+			<span class="but1">&lt;</span>
+			<span class="but2">&gt;</span>
+			<div class=" cp_wrap flex">
+				<div>
+					<img src="img/6.png" alt="">
+					<div class="cpxx">2D基准站天线</div>
+					<div class="xq">查看详情&nbsp;&nbsp;&gt;&gt;</div>
+				</div>
+				<div>
+					<img src="img/5.png" alt="">
+					<div class="cpxx">3D基准站天线</div>
+					<div class="xq">查看详情&nbsp;&nbsp;&gt;&gt;</div>
+				</div>
+				<div>
+					<img src="img/7.png" alt="">
+					<div class="cpxx">无人机天线</div>
+					<div class="xq">查看详情&nbsp;&nbsp;&gt;&gt;</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 新闻中心 -->
+	<div class="list4">
+		<div>
+			<div class="flex">
+				<div>
+					<span class="x1">新闻中心</span>
+					<span class="x2">/NEWS CENTER</span>
+				</div>
+				<div>
+					<a href="#" class="x3">查看更多 &gt;&gt;</a>
+				</div>
+			</div>
+			<div class="flex">
+				<div>
+					<span class="d1"><i></i></span>
+					<span class="d2">RTK电台哪家强？eRadio™智能电台大比测</span>
+				</div>
+				<div class="d3 ">2018-07-16</div>
+			</div>
+			<div class="flex">
+				<div>
+					<span class="d1"><i></i></span>
+					<span class="d2">共建北斗新时代丨华信亮相第九届中国卫星导航...</span>
+				</div>
+				<div class="d3 ">2018-07-16</div>
+			</div>
+			<div class="flex">
+				<div>
+					<span class="d1"><i></i></span>
+					<span class="d2">创新•融合丨华信引领高精度天线进入全网通时代</span>
+				</div>
+				<div class="d3 ">2018-07-16</div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div class="lidt5">
+		<div>
+			<div>
+				<a href="#">人才招聘&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+				<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;留言反馈&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+				<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;友情链接</a>
+			</div>
+			<div>翻版必究 粤ICP备09221680号</div>
+			<div>Copyright © 2012 深圳市华信天线技术有限公司</div>
+		</div>
+	</div>
+    <script src="js/1.js"></script>
+    <script src="js/2.js"></script>
+	<script>
+        (function(){
+
+            var html=document.documentElement;
+
+            var whtml=html.getBoundingClientRect().width;
+
+            html.style.fontSize=whtml/7.68+"px";
+
+        })();
+    </script>
+</body>
+</html>
